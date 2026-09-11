@@ -15,5 +15,6 @@ artifacts:
   - "LDAP-Auth.dll"
   - "Novell.Directory.Ldap.NETStandard.dll"
 changelog: |-
+  - Fix login/password-change failure when the Jellyfin username differs from the LDAP username only by case (upstream #201)
   - Active Directory: ChangePassword now writes unicodePwd as a quoted UTF-16LE value, so "Allow Password Change" works against AD (upstream #164/#200)
   - Backport "Fix IUserManager.RenameUser signature for Jellyfin 12.x" for Jellyfin 10.11.9 (#215) @tam1m
