@@ -9,7 +9,7 @@ Packaged builds are published through
 | Patch | Versions | Status |
 |---|---|---|
 | 1. `unicodePwd` password change for AD | 23.0.1.0 / 24.0.1.0 | Published |
-| 2. Skip case-only username rename | 23.0.2.0 / 24.0.2.0 | Withdrawn 2026-09-11, code kept in history (see below) |
+| 2. Skip case-only username rename | 23.0.2.0 / 24.0.2.0 | Published |
 
 ---
 
@@ -167,9 +167,9 @@ there is no scenario in which the skipped call would have succeeded.
 
 ### Status
 
-Shipped as 23.0.2.0 / 24.0.2.0 on 2026-09-10 and withdrawn on 2026-09-11 (releases and tags
-deleted, commits reverted: `2829016` on `patch-v23`, `c0a00e2` on `patch-v24`). The original
-commits (`a567ee4`, `9819bd2`) remain in history and can be restored by reverting the revert.
+Shipped as 23.0.2.0 / 24.0.2.0 on 2026-09-10, briefly withdrawn on 2026-09-11 while the scope of
+the change was reviewed (commits `2829016` / `c0a00e2` reverted it, `18f7496` / `c5af29a`
+reapplied it), and republished the same day. Both versions are current.
 
 Without this patch, every account whose Jellyfin name and AD `sAMAccountName` differ only in
 case fails to log in. The workaround on stock code is to make the names match exactly; the
