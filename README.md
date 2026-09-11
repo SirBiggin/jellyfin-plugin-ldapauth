@@ -18,6 +18,9 @@
 
 ## About
 
+> **Fork notice (SirBiggin):** this branch carries Active Directory fixes on top of upstream.
+> See [PATCHES.md](PATCHES.md) for the changes and a technical breakdown.
+
 LDAP authentication for Jellyfin Media Server. JelLDAP, if you will.
 
 Authenticate your Jellyfin users against an LDAP database, and optionally create users who do not yet exist automatically.
